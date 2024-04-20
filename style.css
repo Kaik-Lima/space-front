@@ -1,0 +1,147 @@
+@charset 'UTF-8';
+
+@font-face {
+	font-family: 'Heebo';
+	src: url(fonts/Heebo-Medium.ttf) format('truetype');
+	font-style: bolder;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background: black url(images/40Z_2105.w023.n001.595B.p1.595.jpg) no-repeat fixed;
+    background-size: cover;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.145);
+}
+header h1 {
+    color: white;
+    font-family: Heebo;
+    font-size: 7em;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.53);
+}
+header h3 {
+    color: white;
+    font-size: 1.5em;
+    font-family: Heebo;
+    font-weight: lighter;
+    padding: 0px 0px 10px 0px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.53);
+}
+header p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.222);
+}
+.painel {
+    max-width: 500px;
+    padding: 150px;
+    margin-left: 50%;
+}
+.login {
+    margin-top: 15px;
+}
+.botao {
+    width: 20%;
+    height: 38px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    background-color: #edc271;
+    padding: 10px;
+    text-decoration: none;
+    border-color: #edc271;
+}
+.botao:hover {
+    background-color: #e4b34d;
+}
+.colocarEmail {
+    width: 60%;
+    height: 12px;
+    padding: 12px;
+    font-family: monospace;
+    text-align: left;
+}
+main {
+    background-color: rgb(249, 249, 241);
+    height: 100vh;
+    width: 100vw;
+    margin-top: 50px;
+}
+main .primeirasecao .rotulo h3 {
+    color: gray;
+    font-family: Heebo;
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px 0px;
+}
+main .primeirasecao .rotulo h2 {
+    color: rgb(47, 37, 187);
+    font-family: Heebo;
+    font-size: 2.6em;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+main .primeirasecao .rotulo p {
+    color: rgba(128, 128, 128, 0.564);
+    font-family: Heebo;
+    font-weight: normal;
+    text-align: center;
+    padding: 30px 0px;
+}
+.primeirasecao {
+    max-width: 60%;
+    margin: auto;
+}
+main .primeirasecao .rotulo .quadrado {
+    width: 80px;
+    height: 10px;
+    margin: auto;
+    background-color: #e4b34d;
+}
+.imagem {
+    width: 70%;
+    height: 40%;
+    display: flex;
+    margin-right: 20px;
+}
+.segundasecao {
+    max-width: 90%;
+    margin: 10px 10%;
+    display: flex;
+    background-color: white;
+}
+main .segundasecao h3 {
+    color: gray;
+    font-family: Heebo;
+    font-weight: lighter;
+    display: block;
+    padding: 10px 0px;
+}
+main .segundasecao h2 {
+    color: rgb(15, 11, 64);
+    font-family: Heebo;
+    font-size: 2.6em;
+    font-weight: bold;
+    display: inline-flex;
+    padding-bottom: 20px;
+}
+main .segundasecao p {
+    color: rgba(76, 76, 76, 0.564);
+    font-family: Heebo;
+    font-weight: normal;
+    padding: 30px 0px;
+}
+main .segundasecao .quadrado {
+    width: 80px;
+    height: 10px;
+    background-color: #e4b34d;
+}
