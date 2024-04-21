@@ -11,7 +11,7 @@
     padding: 0;
 }
 header {
-    width: 100vw;
+    width: 98.9vw;
     height: 100vh;
     background: black url(images/40Z_2105.w023.n001.595B.p1.595.jpg) no-repeat fixed;
     background-size: cover;
@@ -24,14 +24,17 @@ header h1 {
     font-weight: normal;
     text-transform: uppercase;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.53);
+    display: block;
 }
 header h3 {
     color: white;
     font-size: 1.5em;
     font-family: Heebo;
     font-weight: lighter;
-    padding: 0px 0px 10px 0px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.53);
+    display: block;
+    padding: 0px 0px 10px 0px;
+
 }
 header p {
     color: white;
@@ -39,17 +42,24 @@ header p {
     font-weight: 100;
     font-style: italic;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.222);
+    display: block;
 }
 .painel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.painel .painelsize {
     max-width: 500px;
-    padding: 150px;
-    margin-left: 50%;
 }
 .login {
     margin-top: 15px;
 }
 .botao {
-    width: 20%;
+    min-width: 20%;
     height: 38px;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -71,9 +81,9 @@ header p {
 }
 main {
     background-color: rgb(249, 249, 241);
-    height: 100vh;
-    width: 100vw;
-    margin-top: 50px;
+    height: 100%;
+    width: 98.9vw;
+    padding-top: 90px;
 }
 main .primeirasecao .rotulo h3 {
     color: gray;
@@ -83,7 +93,7 @@ main .primeirasecao .rotulo h3 {
     padding: 10px 0px;
 }
 main .primeirasecao .rotulo h2 {
-    color: rgb(47, 37, 187);
+    color: rgb(15, 11, 64);
     font-family: Heebo;
     font-size: 2.6em;
     font-weight: bold;
@@ -95,10 +105,11 @@ main .primeirasecao .rotulo p {
     font-family: Heebo;
     font-weight: normal;
     text-align: center;
-    padding: 30px 0px;
+    font-style: italic;
+    padding: 30px 0px 20% 0px;
 }
-.primeirasecao {
-    max-width: 60%;
+section.primeirasecao {
+    max-width: 50%;
     margin: auto;
 }
 main .primeirasecao .rotulo .quadrado {
@@ -108,19 +119,18 @@ main .primeirasecao .rotulo .quadrado {
     background-color: #e4b34d;
 }
 .imagem {
-    width: 70%;
-    height: 40%;
-    display: flex;
-    margin-right: 20px;
+    max-width: 70%;
+    max-height: 60%;
+    padding-right: 20px;
 }
 .segundasecao {
-    max-width: 90%;
-    margin: 10px 10%;
+    max-width: 70%;
+    margin: auto;
     display: flex;
     background-color: white;
 }
 main .segundasecao h3 {
-    color: gray;
+    color: rgb(15, 11, 64);
     font-family: Heebo;
     font-weight: lighter;
     display: block;
@@ -144,4 +154,115 @@ main .segundasecao .quadrado {
     width: 80px;
     height: 10px;
     background-color: #e4b34d;
+}
+.terceirasecao {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.imagemlegenda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+.satelite, .rocket {
+    max-width: 550px;
+}
+main .terceirasecao p {
+    max-width: 500px;
+    padding: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(15, 11, 64);
+    font-style: italic;
+    line-height: 25px;
+}
+main .quartasecao {
+    min-width: 100%;
+    background: rgb(15, 11, 64) url(https://images01.nicepage.io/a1389d7bc73adea1e1c1fb7e/fec2b01d3d9b5d3eb4747fd3/4b62921ee91c1bdbe01302062e83fddb.png) no-repeat fixed;
+    background-size: contain;
+    text-align: center;
+    margin-top: 20%;
+}
+main .certificado {
+    width: 50%;
+    min-height: 500px;
+    padding-top: 10%;
+    margin: auto;
+}
+main .quartasecao h3 {
+    color: white;
+    font-family: Heebo, coursive;
+    font-weight: 100;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.222);
+}
+main .quartasecao h2 {
+    color: white;
+    font-family: Heebo, coursive;
+    font-size: 3em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.222);
+    padding-bottom: 20px;
+}
+main .quartasecao p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.222);
+    text-align: center;
+    padding-top: 20px;
+    line-height: 25px;
+}
+main .quartasecao .quadrado {
+    width: 80px;
+    height: 10px;
+    margin: auto;
+    background-color: #e4b34d;
+}
+main .quintasecao {
+    background: purple url(https://static.vecteezy.com/system/resources/previews/026/975/929/non_2x/dark-purple-space-background-for-banner-ai-generated-free-photo.jpg) no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.485);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+main .quintasecao .detalhes {
+    min-height: 200px;
+    padding: 200px;
+}
+main .quintasecao .detalhes h2{
+    color: white;
+    font-family: Heebo;
+    font-size: 3em;
+    font-weight: normal;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.347);
+}
+main .quintasecao .detalhes p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 30px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.347);
+}
+main .quintasecao .fonte a .github {
+    max-width: 200px;
+    transition: scale 1s;
+}
+main .quintasecao .fonte a .github:hover {
+    scale: 1.1;
+}
+footer .rodape {
+    font-family: monospace;
+    color: white;
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
